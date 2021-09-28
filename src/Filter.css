@@ -1,0 +1,40 @@
+#filter{
+    margin-left: 94px;
+}
+#filter-title{
+    font-family: Helvetica , Arial , sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #192024;
+    margin-bottom: 23px;
+   
+}
+.checkbox{
+    width: 20px;
+    height: 20px;
+    
+}
+.alliance{
+    font-family: Helvetica , Arial , sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #192024;
+    margin-left: 10px;
+    margin-right: 24px;
+    vertical-align: text-top;
+    
+
+}
+@media screen and (max-width:550px){
+    .alliance{
+        font-family: Helvetica , Arial , sans-serif;
+        font-size: 13px;
+        font-weight: normal;
+        color: #192024;
+        margin-left: 10px;
+        margin-right: 24px;
+        vertical-align: text-top;
+    }
+
+
+}
