@@ -4,23 +4,28 @@ import Filter from './Filter';
 import Item from './Item';
 import Title from './Title';
 
-const loadData = function (callback) {
-    window.jsonpCallback = callback;
-    let data = document.createElement("script");
-    data.src = `https://www.kayak.com/h/mobileapis/directory/airlines/homework?jsonp=jsonpCallback`
-    document.body.appendChild(data);
-}
-
-
 
 function Content() {
     const [allData, setAllData] = useState([]);
     const [fileter, setFilter] = useState({});
 
-
     useEffect(() => {
-        loadData(setAllData)
-    }, [])
+        const url = "http://makeup-api.herokuapp.com/api/v1/products.json";
+
+        const fetchData = async () => {
+            try {
+                const response = await fetch(url);
+                const json = await response.json();
+                setAllData(json);
+                console.log(json)
+            } catch (error) {
+                console.log("error", error);
+            }
+        };
+
+        fetchData();
+    }, []);
+
     useEffect(() => {
     }, [fileter])
 
@@ -37,14 +42,14 @@ function Content() {
     if (Object.keys(fileter).length === 0) {
         newData = allData
     } else {
-        newData = allData.filter((item) => { return item.alliance in fileter })
+        newData = allData.filter((item) => { return item.brand in fileter })
 
     }
-    console.log(newData)
+    // console.log(newData)
 
     return (
         <div id="content">
-            <div id="filter-by-alliances">
+            <div id="filter-by-brand">
                 <Title></Title>
                 <Filter handleSet={handleSet}></Filter>
             </div>
@@ -53,11 +58,12 @@ function Content() {
                 {
                     newData.map((item) => {
                         return <Item
-                            airlineName={item.name}
-                            airlineLogo={item.logoURL}
-                            allianceName={item.alliance}
-                            phoneNumber={item.phone}
-                            website={item.site}
+                            image={item.image_link}
+                            brand={item.brand}
+                            category={item.category}
+                            name={item.name}
+                            price={item.price}
+                            priceSign={item.price_sign}
                         />
                     })}
 

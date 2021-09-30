@@ -1,39 +1,20 @@
 import './Item.css'
 
-function Item({ airlineName, airlineLogo, allianceName, phoneNumber, website }) {
-    const url = 'https://www.kayak.com/' + airlineLogo;
-    const length = airlineName.length;
-    let alliancename;
-    switch (allianceName) {
-        case "OW":
-            alliancename = "Oneworld";
-            break;
-        case "ST":
-            alliancename = "Sky Team";
-            break;
-        case "SA":
-            alliancename = "Star Alliance";
-            break;
-        default:
-            allianceName = ""
-    }
-
-    website= website.replace("https://www.","").replace("http://www.","").replace("www.","").replace("https://","").split(/[/?#]/)[0];
- 
+function Item({ image, brand, category, name, price, priceSign }) {
+    const length = name.length;
 
     return (
         <div id='item'>
-            <div id="airline-info">
-
-                <div id="airline-logo">
-                    <img id="logo" src={url} alt='logo test' />
+            <div id="product-info">
+                <div id="product-logo">
+                    <img id="logo"  onError={(e) => { e.target.onerror = null; e.target.src = "images.png" }} src={image} alt='logo test' />
                 </div>
 
                 <div id="info">
-                    <span id={length > 27 ? "airline-name-limit" : "airline-name"}>{airlineName}</span>
-                    <span id="alliance-name" className="item-hover">{alliancename}</span>
-                    <span id="phone-number" className="item-hover">{phoneNumber}</span>
-                    <span id="website" className="item-hover">{website}</span>
+                    <span id={length > 20 ? "product-name-limit" : "product-name"}>{name}</span>
+                    <span className="item-hover">brand: {brand}</span>
+                    <span className="item-hover">price: {price} {priceSign}</span>
+                    <span className="item-hover">category: {category}</span>
                 </div>
 
             </div>

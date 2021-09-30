@@ -3,7 +3,7 @@ function Title() {
     
     return (
         <span id="title">
-            Airlines
+            Makeup Products
         </span>
     )
 }

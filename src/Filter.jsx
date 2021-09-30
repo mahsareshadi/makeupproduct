@@ -15,21 +15,30 @@ function Filter({ handleSet }) {
 
     return (
         <div id="filter">
-            <div id="filter-title">Filter by Alliances</div>
-            <input type="checkbox" id="ow" className="checkbox" name="oneworld" value="OW"
+            <div id="filter-title">Filter by Brand</div>
+            <input type="checkbox" className="checkbox" name="nyx" value="nyx"
                 onChange={handleCheck}
             />
-            <span className="alliance"> Oneworld </span>
+            <span className="brands"> NYX </span>
 
-            <input type="checkbox" id="st" className="checkbox" name="skyteam" value="ST"
+            <input type="checkbox" className="checkbox" name="clinique" value="clinique"
                 onChange={handleCheck}
             />
-            <span className="alliance"> Sky Team </span>
+            <span className="brands"> CLINIQUE </span>
 
-            <input type="checkbox" id="sa" className="checkbox" name="staralliance" value="SA"
+            <input type="checkbox" className="checkbox" name="smashbox" value="smashbox"
                 onChange={handleCheck}
             />
-            <span className="alliance"> Star Alliance</span>
+            <span className="brands"> SMASHBOX</span>
+            <input type="checkbox" className="checkbox" name="dior" value="dior"
+                onChange={handleCheck}
+            />
+            <span className="brands"> DIOR </span>
+
+            <input type="checkbox" className="checkbox" name="covergirl" value="covergirl"
+                onChange={handleCheck}
+            />
+            <span className="brands"> COVERGIRL</span>
 
         </div>
     )
