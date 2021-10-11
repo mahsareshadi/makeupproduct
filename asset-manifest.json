@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/makeupproduct/static/css/main.8f38ce21.chunk.css",
-    "main.js": "/makeupproduct/static/js/main.aff2eb1b.chunk.js",
-    "main.js.map": "/makeupproduct/static/js/main.aff2eb1b.chunk.js.map",
+    "main.js": "/makeupproduct/static/js/main.317cfab7.chunk.js",
+    "main.js.map": "/makeupproduct/static/js/main.317cfab7.chunk.js.map",
     "runtime-main.js": "/makeupproduct/static/js/runtime-main.91260b1c.js",
     "runtime-main.js.map": "/makeupproduct/static/js/runtime-main.91260b1c.js.map",
     "static/js/2.aea81c86.chunk.js": "/makeupproduct/static/js/2.aea81c86.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.91260b1c.js",
     "static/js/2.aea81c86.chunk.js",
     "static/css/main.8f38ce21.chunk.css",
-    "static/js/main.aff2eb1b.chunk.js"
+    "static/js/main.317cfab7.chunk.js"
   ]
 }
