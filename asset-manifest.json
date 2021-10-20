@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/makeupproduct/static/css/main.e778bd28.chunk.css",
-    "main.js": "/makeupproduct/static/js/main.70f545d2.chunk.js",
-    "main.js.map": "/makeupproduct/static/js/main.70f545d2.chunk.js.map",
+    "main.css": "/makeupproduct/static/css/main.cb8084b3.chunk.css",
+    "main.js": "/makeupproduct/static/js/main.69ea3156.chunk.js",
+    "main.js.map": "/makeupproduct/static/js/main.69ea3156.chunk.js.map",
     "runtime-main.js": "/makeupproduct/static/js/runtime-main.91260b1c.js",
     "runtime-main.js.map": "/makeupproduct/static/js/runtime-main.91260b1c.js.map",
-    "static/js/2.5c9e542f.chunk.js": "/makeupproduct/static/js/2.5c9e542f.chunk.js",
-    "static/js/2.5c9e542f.chunk.js.map": "/makeupproduct/static/js/2.5c9e542f.chunk.js.map",
+    "static/js/2.396cc762.chunk.js": "/makeupproduct/static/js/2.396cc762.chunk.js",
+    "static/js/2.396cc762.chunk.js.map": "/makeupproduct/static/js/2.396cc762.chunk.js.map",
     "index.html": "/makeupproduct/index.html",
-    "static/css/main.e778bd28.chunk.css.map": "/makeupproduct/static/css/main.e778bd28.chunk.css.map",
-    "static/js/2.5c9e542f.chunk.js.LICENSE.txt": "/makeupproduct/static/js/2.5c9e542f.chunk.js.LICENSE.txt",
+    "static/css/main.cb8084b3.chunk.css.map": "/makeupproduct/static/css/main.cb8084b3.chunk.css.map",
+    "static/js/2.396cc762.chunk.js.LICENSE.txt": "/makeupproduct/static/js/2.396cc762.chunk.js.LICENSE.txt",
     "static/media/Item.css": "/makeupproduct/static/media/HelveticaNeue.372d58a9.ttf",
     "static/media/Logo.983be81f.png": "/makeupproduct/static/media/Logo.983be81f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.91260b1c.js",
-    "static/js/2.5c9e542f.chunk.js",
-    "static/css/main.e778bd28.chunk.css",
-    "static/js/main.70f545d2.chunk.js"
+    "static/js/2.396cc762.chunk.js",
+    "static/css/main.cb8084b3.chunk.css",
+    "static/js/main.69ea3156.chunk.js"
   ]
 }
